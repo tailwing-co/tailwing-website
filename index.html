@@ -13,34 +13,30 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f9f9f9;
-            
-            /* Adjust theme based on user preference */
-            @media (prefers-color-scheme: dark) {
-                body {
-                    background-color: #121212;
-                    color: #e0e0e0;
-                }
-                h1 {
-                    color: #fff;
-                }
-                p {
-                    color: #ccc;
-                }
-            }
-            @media (prefers-color-scheme: light) {
-                body {
-                    background-color: #f9f9f9;
-                    color: #333;
-                }
-                h1 {
-                    color: #333;
-                }
-                p {
-                    color: #666;
-                }
-            }
             font-family: 'Inter', sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #fff;  
+            }
+            h1 {
+                color: #f1f1f1;
+            }
+            p {
+                color: #ccc;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #f9f9f9;
+            }
+            h1 {
+                color: #000;
+            }
+            p {
+                color: #555;
+            }
         }
         .container {
             text-align: center;
@@ -49,17 +45,15 @@
             width: 150px;
             height: 150px;
             margin-bottom: 20px;
-            border-radius: 15px; /* Adding rounded corners */
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding slight shadow */
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         h1 {
             font-size: 2.5rem;
-            color: #333;
             margin-bottom: 10px;
         }
         p {
             font-size: 1.2rem;
-            color: #666;
         }
     </style>
 </head>
