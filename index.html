@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            
+            /* Adjust theme based on user preference */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: #121212;
+                    color: #e0e0e0;
+                }
+                h1 {
+                    color: #fff;
+                }
+                p {
+                    color: #ccc;
+                }
+            }
+            @media (prefers-color-scheme: light) {
+                body {
+                    background-color: #f9f9f9;
+                    color: #333;
+                }
+                h1 {
+                    color: #333;
+                }
+                p {
+                    color: #666;
+                }
+            }
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .container img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 15px; /* Adding rounded corners */
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding slight shadow */
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="./icon.jpg" alt="Tailwing Icon">
+    <h1>Tailwing</h1>
+    <p>Social multimedia discovery.</p>
+</div>
+</body>
+</html>
